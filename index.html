@@ -744,5 +744,19 @@ details p{padding:0 0 24px;color:var(--muted);font-size:.95rem;max-width:62ch}
   ds.forEach(function(d){d.addEventListener('toggle',function(){if(d.open){ds.forEach(function(o){if(o!==d)o.open=false})}})});
 })();
 </script>
+<!-- Google Ads: conversao Contato no clique do WhatsApp -->
+<script>
+  document.addEventListener('click', function(e){
+    var link = e.target.closest('a[href*="wa.me"]');
+    if (link && typeof gtag === 'function') {
+      gtag('event','conversion',{
+        'send_to':'AW-18533463419/9F6TCOinoKcdEPvquIVF',
+        'value':1.0,
+        'currency':'BRL',
+        'transport_type':'beacon'
+      });
+    }
+  });
+</script>
 </body>
 </html>
